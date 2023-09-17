@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>算法相关</title>
+      <link href="/2023/07/25/%E7%AE%97%E6%B3%95%E7%9B%B8%E5%85%B3/"/>
+      <url>/2023/07/25/%E7%AE%97%E6%B3%95%E7%9B%B8%E5%85%B3/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一些零碎小知识点"><a href="#一些零碎小知识点" class="headerlink" title="一些零碎小知识点"></a>一些零碎小知识点</h2><h3 id="常用头文件"><a href="#常用头文件" class="headerlink" title="常用头文件"></a>常用头文件</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span> <span class="comment">//万能头文件</span></span></span><br></pre></td></tr></table></figure><h3 id="动态数组"><a href="#动态数组" class="headerlink" title="动态数组"></a>动态数组</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">a</span><span class="params">(n)</span></span>;</span><br></pre></td></tr></table></figure><h3 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cin&gt;&gt;n <span class="comment">//输入n</span></span><br><span class="line">cout&lt;&lt;a[i]&lt;&lt;endl <span class="comment">//输出a[i]并换行</span></span><br><span class="line">cout&lt;&lt;a[i]&lt;&lt;<span class="string">&quot;\n&quot;</span> <span class="comment">//输出a[i]并换行</span></span><br></pre></td></tr></table></figure><h3 id="指针定义二维数组"><a href="#指针定义二维数组" class="headerlink" title="指针定义二维数组"></a>指针定义二维数组</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">a = (<span class="type">int</span> **)<span class="built_in">calloc</span>(n,<span class="built_in">sizeof</span>(<span class="type">int</span> *)); <span class="comment">//或(int **)malloc(n*sizeof(int *));</span></span><br><span class="line"><span class="comment">//calloc 会初始化为0 malloc不会</span></span><br><span class="line"><span class="comment">//（int **）强制类型转换 指向int型变量指针的指针</span></span><br><span class="line"><span class="comment">//sizeof(int *) int型指针占的字节数</span></span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">    a[i]=(<span class="type">int</span> *)<span class="built_in">calloc</span>(n,<span class="built_in">sizeof</span>(<span class="type">int</span>));</span><br><span class="line">&#125; <span class="comment">//定义n个int型变量指针</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">free</span>(a);</span><br><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">    <span class="built_in">free</span>(a[i]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//释放内存</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> c </tag>
+            
+            <tag> c++ </tag>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>markdown相关</title>
+      <link href="/2023/07/24/markdown%E7%9B%B8%E5%85%B3/"/>
+      <url>/2023/07/24/markdown%E7%9B%B8%E5%85%B3/</url>
+      
+        <content type="html"><![CDATA[<h2 id="多个标签用法"><a href="#多个标签用法" class="headerlink" title="多个标签用法"></a>多个标签用法</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tags: </span><br><span class="line"><span class="bullet">  -</span> hexo   </span><br><span class="line"><span class="bullet">  -</span> gitee</span><br><span class="line"><span class="bullet">  -</span> 命令行</span><br><span class="line">  &lt;!-- -加空格  --&gt;</span><br></pre></td></tr></table></figure><h2 id="Markdown文档通常应该怎么写"><a href="#Markdown文档通常应该怎么写" class="headerlink" title="Markdown文档通常应该怎么写"></a>Markdown文档通常应该怎么写</h2><h3 id="使用标题："><a href="#使用标题：" class="headerlink" title="使用标题："></a>使用标题：</h3><p>使用井号（#）开头创建标题。使用多个井号表示不同级别的标题。例如：</p>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 标题1</span><br><span class="line">## 标题2</span><br><span class="line">### 标题3</span><br></pre></td></tr></table></figure><h3 id="强调内容："><a href="#强调内容：" class="headerlink" title="强调内容："></a>强调内容：</h3><p>使用星号（*）或下划线（_）对内容进行强调。单个星号或下划线是斜体，两个是粗体，三个是粗斜体。例如：</p>   <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">*斜体*</span></span><br><span class="line"><span class="strong">**粗体**</span></span><br><span class="line"><span class="strong">**<span class="emphasis">*粗斜体*</span>**</span></span><br></pre></td></tr></table></figure><h3 id="列表："><a href="#列表：" class="headerlink" title="列表："></a>列表：</h3><p>使用短横线（-）或数字加点创建无序或有序列表。例如：</p>   <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项1</span><br><span class="line"><span class="bullet">-</span> 无序列表项2</span><br><span class="line"></span><br><span class="line"><span class="bullet">1.</span> 有序列表项1</span><br><span class="line"><span class="bullet">2.</span> 有序列表项2</span><br></pre></td></tr></table></figure><h3 id="链接和图片："><a href="#链接和图片：" class="headerlink" title="链接和图片："></a>链接和图片：</h3><p>使用中括号（[]）输入链接文本，并使用小括号（()）输入链接地址。例如：</p>   <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">链接文本</span>](<span class="link">链接地址</span>)</span><br><span class="line">![<span class="string">图片描述</span>](<span class="link">图片链接地址</span>)</span><br></pre></td></tr></table></figure><h3 id="引用块："><a href="#引用块：" class="headerlink" title="引用块："></a>引用块：</h3><p>使用大于号（&gt;）创建引用块。例如：</p>   <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 这是引用的内容。</span></span><br></pre></td></tr></table></figure><h3 id="代码块："><a href="#代码块：" class="headerlink" title="代码块："></a>代码块：</h3><p>使用三个反引号（&#96;&#96;&#96;)创建代码块，并指定代码语言。例如：</p>   <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Hello, world!&quot;</span>)</span><br></pre></td></tr></table></figure><h3 id="分割线："><a href="#分割线：" class="headerlink" title="分割线："></a>分割线：</h3><p>使用三个或更多的连字符（-）或星号（*）创建分割线。例如：</p>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">---</span><br></pre></td></tr></table></figure><h3 id="表格："><a href="#表格：" class="headerlink" title="表格："></a>表格：</h3><p>使用垂直竖线（|）和连字符（-）创建简单的表格。例如：</p>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">| 列1 | 列2 |</span><br><span class="line">|-----|-----|</span><br><span class="line">| 内容1 | 内容2 |</span><br></pre></td></tr></table></figure><h3 id="注释："><a href="#注释：" class="headerlink" title="注释："></a>注释：</h3><p>使用HTML注释语法添加注释<br>    <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 注释 --&gt;</span><br></pre></td></tr></table></figure></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>My_First_Blog</title>
+      <link href="/2023/07/22/My-First-Blog/"/>
+      <url>/2023/07/22/My-First-Blog/</url>
+      
+        <content type="html"><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h3 id="hexo常用操作"><a href="#hexo常用操作" class="headerlink" title="hexo常用操作"></a>hexo常用操作</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="built_in">test</span> <span class="comment">#新建一个test文档</span></span><br><span class="line">$ hexo s -p 8080 <span class="comment">#启动服务 本地看 8080端口、</span></span><br><span class="line">$ hexo clean          <span class="comment"># 清除所有记录</span></span><br><span class="line">$ hexo generate       <span class="comment"># 生成静态网页 hexo g</span></span><br><span class="line">$ hexo deplore <span class="comment">#部署 hexo d</span></span><br></pre></td></tr></table></figure><h3 id="相对路径写法"><a href="#相对路径写法" class="headerlink" title="相对路径写法"></a>相对路径写法</h3><p><strong>.&#x2F;</strong> 用于相对于当前文件夹<br><strong>…&#x2F;</strong> 用于相对于当前文件夹的上一级文件夹</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> gitee </tag>
+            
+            <tag> 命令行 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2023/07/20/hello-world/"/>
+      <url>/2023/07/20/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
